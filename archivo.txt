@@ -1,2 +1,5 @@
-Hola mi nombres es 
-Linder Hassinger
+Hola
+
+Nombre: Linder Hassinger
+Cel: 99999
+Linkedin: linkedin.com/linder
