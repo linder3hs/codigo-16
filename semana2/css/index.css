@@ -34,7 +34,6 @@ Alpha => Opacidad 0 - 1
 hsl => Hue Saturation Lightness
 */
 
-
 .link-a {
   font-size: 32px;
   font-family: "Dank Mono";
@@ -44,4 +43,52 @@ hsl => Hue Saturation Lightness
   /* Hexadecimal: Es una forma en la cual podemos aplicar un color basada en 6 digitos
   alfanumericos */
   color: rgb(53, 146, 239);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  background-color: rgba(53, 146, 239, 0.3);
+}
+
+.span-1 {
+  text-decoration: line-through;
+  text-transform: capitalize;
+}
+
+.span-2 {
+  text-decoration: overline;
+}
+
+.span-3 {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.span-4 {
+  text-decoration: line-through;
+  text-decoration-color: #f01;
+}
+
+.span-5 {
+  text-decoration: overline;
+  background-color: #0ba;
+  text-decoration-color: #fff;
+}
+
+/* 
+  lowercase => Minusculas
+  uppercase => mayusculas
+  capitalize => Primera del text en mayuscula
+ */
+
+.span-6 {
+  color: #fff;
+  text-decoration: underline;
+  background-color: rgb(252, 90, 255);
+  text-decoration-color: rgb(255, 183, 0);
+  /* Estamos indicando que el texto sea en minusiculas */
+  text-transform: lowercase;
 }
