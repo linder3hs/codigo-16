@@ -1,0 +1,47 @@
+h1 {
+  /* font-family */
+  /* que pasa si una fuente no existe */
+  /* en css tenemos la opcion de poner varios tipos de letra */
+  /* para que si la primera no existe css busque en la segunda y asi consecutivamente */
+  font-family: apple-system, Helvetica, Arial, sans-serif;
+  font-size: 45px;
+  /* Font-weight tambien puede recibir numeros
+  iran de 100 a 900 */
+  /*  ! Importante: Al poner un peso en font-weight no hay que unidades de medida */
+  font-weight: 100;
+  /* text-decoration */
+  text-decoration: underline;
+}
+
+/* * Nota:
+   * 700 = bold
+   * 900 = bolder
+ */
+
+.parrafo {
+  font-family: "Dank Mono", monospace;
+  /* font-size sirve para poder manejar el tamaño del texto */
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+/* un poco de teoria de colores */
+/* 
+Hexadecimal
+RGB => Red Green Blue
+RGBA => Red Green Blue Alpha
+Alpha => Opacidad 0 - 1
+hsl => Hue Saturation Lightness
+*/
+
+
+.link-a {
+  font-size: 32px;
+  font-family: "Dank Mono";
+  /* Al poner none en una propiedad estamos invalidandola */
+  text-decoration: none;
+  /* Con la propiad color: sirve para poder cambiar el color de un texto */
+  /* Hexadecimal: Es una forma en la cual podemos aplicar un color basada en 6 digitos
+  alfanumericos */
+  color: rgb(53, 146, 239);
+}
