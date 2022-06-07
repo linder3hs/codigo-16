@@ -3,7 +3,7 @@ h1 {
   /* que pasa si una fuente no existe */
   /* en css tenemos la opcion de poner varios tipos de letra */
   /* para que si la primera no existe css busque en la segunda y asi consecutivamente */
-  font-family: apple-system, Helvetica, Arial, sans-serif;
+  font-family: "Jost";
   font-size: 45px;
   /* Font-weight tambien puede recibir numeros
   iran de 100 a 900 */
@@ -36,7 +36,7 @@ hsl => Hue Saturation Lightness
 
 .link-a {
   font-size: 32px;
-  font-family: "Dank Mono";
+  font-family: "Play";
   /* Al poner none en una propiedad estamos invalidandola */
   text-decoration: none;
   /* Con la propiad color: sirve para poder cambiar el color de un texto */
@@ -91,4 +91,31 @@ ul {
   text-decoration-color: rgb(255, 183, 0);
   /* Estamos indicando que el texto sea en minusiculas */
   text-transform: lowercase;
+}
+
+/* Para que CSS puede leer una fuente desde un archivo 
+tenemos que @font-face esto nos permite cargar una fuente externa y darle 
+un nombre para su uso */
+
+/* El font-family en este caso puede ser cualquier nombre
+es una buena practica nombrarla por su nombre oficial */
+
+@font-face {
+  /* En este caso font-family es el nombre de la fuenta */
+  font-family: "Righteous-Regular";
+  /* src => Es el lugar donde esta alojado la fuente */
+  src: url("../fonts/Righteous-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NanumMyeongjo-Bold";
+  src: url("../fonts/NanumMyeongjo-Bold.ttf");
+}
+
+.title-2 {
+  font-family: "Righteous-Regular";
+}
+
+.parrafo-2 {
+  font-family: "NanumMyeongjo-Bold";
 }
