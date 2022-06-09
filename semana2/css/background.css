@@ -1,0 +1,35 @@
+body {
+  font-family: Verdana;
+}
+
+.bg {
+  border: solid;
+  height: 300px;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.color-green {
+  background-color: green;
+}
+
+.bg-img {
+  background: url("../../semana1/images/una-taza-de-javascript.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bg-img-goku {
+  background: url("../images/goku_house.jpg");
+  /* Estamos diciendo que este div tenga
+  un alto de 500px */
+  height: 500px;
+  background-size: cover;
+  /* Esto indica
+  que queremos mostrar la 
+  parte central de la imagen */
+  background-position: center;
+  background-repeat: no-repeat;
+}
