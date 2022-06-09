@@ -1,0 +1,45 @@
+body {
+  font-family: Verdana;
+}
+
+/* Nota: al poner el atributo fixed convertimos al elemento e un inline */
+header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  /* !ojo: No tiene unidad de medida */
+  z-index: 1;
+}
+
+/* como activamos la opcion de usar
+top, left, right, bottom
+! Recuerden para activar estas 4 opciones debemos tener un position
+! lo que importa que el padre tenga algun tipo de position (relative, absolute, fixed)
+ */
+
+nav {
+  background-color: #333;
+}
+
+ul {
+  padding: 20px;
+}
+
+ul li {
+  display: inline;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+div {
+  position: relative;
+  top: 100px;
+}
+
+#nosotros {
+  height: 100vh;
+  background-color: aquamarine;
+}

@@ -75,9 +75,15 @@ div ocupe basicamente el alto de 2 pantallas */
   float: right;
 }
 
+/* Nota: sabemos que la foto mide 180px x 180px */
+/* El cuadrado que lo contiene mide 200px x 2000px */
+/* para que la foto creza y ocupe esos pixeles  */
+/* podemos usar la propiedad cover */
+
 .escudo {
   background: url("../images/escudo-portugal.png");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 200px;
   width: 200px;
   position: absolute;
