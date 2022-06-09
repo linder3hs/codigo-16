@@ -1,0 +1,86 @@
+.bg-box {
+  height: 400px;
+  width: 400px;
+  background-color: red;
+  /* para mover este elemento
+  por todo el navegador */
+  position: relative;
+  /* al agregar un position a un 
+  element este nos da la opcion de 
+  usar lo siguiente
+  !top
+  !left
+  !right
+  !bottom
+   */
+  /* top: 100px; */
+  /* left: 100px; */
+  right: 100px;
+}
+
+/* Esta la opcion de combinar absolute con
+relative */
+/* Absolute necesita de un padre que defina
+su entorno es decir ancho y alto */
+/* por ende relative va a funcionar como
+padre de abosolute */
+
+.padre {
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+  position: relative;
+}
+
+.hijo {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  /* right: 0; */
+  /* bottom: 0; */
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+}
+
+/* la clase bander que es el contenedor
+ocupe toda la pantalla */
+
+/* vh: viewport height es una unidad de
+medida el rango va de 0 al infinito */
+/* sin embar 100vh = al alto de la pantalla */
+/* si ponenems que un div valga 200vh => a que el
+div ocupe basicamente el alto de 2 pantallas */
+
+/*! ojo : vh es de forma vertical */
+
+.bandera {
+  height: 100vh;
+  border: solid;
+  /* vamos a poner un position relative en este div */
+  position: relative;
+}
+
+.green {
+  height: 100vh;
+  background-color: green;
+  width: 40%;
+  float: left;
+}
+
+.red {
+  height: 100vh;
+  background-color: red;
+  width: 60%;
+  float: right;
+}
+
+.escudo {
+  background: url("../images/escudo-portugal.png");
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(40% - 100px);
+}
