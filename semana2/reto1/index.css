@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+.contenedor {
+  background-color: hsl(212, 45%, 89%);
+  height: 100vh;
+}
+
+.contenedor-interno {
+  width: 375px;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 16px;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Aca estamos diciendo que queremos aplicar el
+estilo a cada element que este dentro este div
+* es igual Todo */
+.contenedor-interno * {
+  margin-top: 16px;
+}
+
+/* last-child => Vamos a obtener el ultimo elmento */
+/* 5 <p> */
+/* Tomaria la ultima p */
+/* p:last-child {
+
+} */
+/* .contenedor-interno:last-child {
+  border: solid;
+  margin-bottom: 20px;
+} */
+
+img {
+  width: 345px;
+  border-radius: 16px;
+}
+
+h4 {
+  width: 60%;
+  margin: auto;
+}
+
+p {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
