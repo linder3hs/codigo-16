@@ -1,0 +1,72 @@
+.container {
+  /* cundo usamos flex */
+  display: flex;
+  height: 100vh;
+  border: solid 3px;
+  /* al activar flex estamos activando sus
+  propiedades */
+
+  /* alinea los elementos de forma horizontal */
+  /* tiene 6 posibles valore */
+  /* flex-start: Alinea los elementos al lado izquierdo */
+  /* center: Aliena al centro */
+  /* flex-end: Alinea los elementos a la derecha */
+
+  /* Estos 3 separan los elementos de forma horizante con la 
+  diferencia que el margen que tiene cada uno es mayor
+  nota: Este va a depender de cuando espacio tenga libre y si
+  no hay espacio libre el margen sera 0 */
+  /* space-between: Alinea los elementos de extremo a extrano */
+  /* space-around */
+  /* space-evenly */
+  justify-content: space-around;
+
+  /* La propiedad que se encarga de alinear elementos de 
+  forma vertical en flex align-items */
+  /* Note: Se basa en la altura, si un elemento no tiene 
+  altura no va a poder centrarlo */
+  align-items: center;
+
+  /* flex tambien permite controlar la direccion de 
+  los elmentos */
+  /* colum: ha transformado la direecion de los elementos 
+  en columnas */
+  /* Nota: por defecto la propieda de los hijos es row */
+  flex-direction: column;
+}
+
+.container div {
+  border: solid red 3px;
+  height: 300px;
+  width: 25%;
+}
+
+.container-2 {
+  display: flex;
+  height: 100vh;
+  border: solid green 3px;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  /* Otra propiedad el felx-direction es row-reverse y column-reverse */
+}
+
+.container-2 div {
+  height: 300px;
+  width: 20%;
+  border: solid orange 3px;
+}
+
+.container-3 {
+  display: flex;
+  height: 100vh;
+  border: solid rgb(128, 0, 126) 3px;
+  justify-content: space-around;
+  flex-direction: column-reverse;
+  /* Otra propiedad el felx-direction es row-reverse y column-reverse */
+}
+
+.container-3 div {
+  height: 300px;
+  width: 20%;
+  border: solid rgb(0, 168, 129) 3px;
+}
