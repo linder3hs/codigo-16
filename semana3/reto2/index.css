@@ -97,3 +97,85 @@ section p {
   font-size: 12px;
   font-weight: 100;
 }
+
+.popular-container {
+  display: flex;
+  margin: 40px;
+  justify-content: center;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: white;
+  color: black;
+}
+
+.price p {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 20%;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.price a {
+  width: 60%;
+  text-align: right;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.description {
+  font-size: 14px;
+  max-width: 75%;
+  font-weight: 100;
+}
+/* TABLE GRANDE 13 */
+@media only screen and (max-width: 1200px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+/* TABLE NORMAL 11 */
+@media only screen and (max-width: 800px) {
+  .small-child {
+    width: 35%;
+  }
+
+  .big-child {
+    width: 35%;
+  }
+}
+
+/* MOBILE 5 - 6 */
+@media only screen and (max-width: 530px) {
+  .small-child {
+    width: 100%;
+  }
+
+  .big-child {
+    width: 100%;
+  }
+
+  .popular-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .price {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}

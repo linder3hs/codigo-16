@@ -1,0 +1,171 @@
+/* paso 1 quitamos margenes a todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Cuando hablamos de colores en un proyecto tenemos 3 nombres como base */
+  /* primary-color: Es el color principal de la web */
+  /* secondary-color */
+  /* dark-color: */
+  /* accent-color: #333 */
+
+  /* let nombreDePersona = "Juan Peres" */
+  /* let name = "Juan Perez" */
+
+  /* !Una regla del nombre de una variable es que esta nos diga el contenido*/
+
+  /* Colors */
+  --sunglow-color: #fecb01;
+  --orange-color: #ff4d00;
+  /* Si queremos cambiar el valor de un variable por complete hacemos un refactor */
+  --white-color: #f3fcfa;
+  --brown-sugar-color: #b26244;
+  --polished-color: #63a496;
+  --capri-color: #3ebdfc;
+  --gray-color: #bab8ad;
+  /* Fonts */
+  /* ojo: Recuerden que las variables solo guardan un valor */
+  --font-fraunces: "Fraunces", sans-serif;
+  --font-barlow: "Barlow", sans-serif;
+}
+
+header {
+  background-color: var(--capri-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul > li {
+  margin: 20px;
+}
+
+/* Nota cuando un elemento es un hijo directo como buena practica usamos el sibolo > */
+ul > li a {
+  font-family: var(--font-barlow);
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.contact {
+  font-family: var(--font-fraunces);
+  background-color: var(--white-color);
+  color: #000;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.bg-orange {
+  height: 60vh;
+  background: url("../images/desktop/image-header.jpg");
+  background-color: var(--capri-color);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: var(--white-color);
+  font-family: var(--font-fraunces);
+  font-size: 4em;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.second-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-container div {
+  height: 60vh;
+  width: 50%;
+}
+
+.bg-egg {
+  background: url("../images/desktop/image-transform.jpg");
+}
+
+.bg-cup {
+  background: url("../images/desktop/image-stand-out.jpg");
+}
+
+.bg-cherry {
+  background: url("../images/desktop/image-graphic-design.jpg");
+}
+
+.bg-orange-complete {
+  background: url("../images/desktop/image-photography.jpg");
+}
+
+.child {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+section h4 {
+  font-family: var(--font-fraunces);
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+section p {
+  font-family: var(--font-barlow);
+  font-weight: 600;
+  color: var(--gray-color);
+  margin-bottom: 30px;
+}
+
+section a {
+  font-family: var(--font-fraunces);
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+section a:hover {
+  box-shadow: 0 4px 6px -6px var(--sunglow-color);
+  width: 115px;
+}
+
+.bottom {
+  justify-content: end;
+}
+
+.bottom h4 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.bottom p {
+  color: #000;
+}
