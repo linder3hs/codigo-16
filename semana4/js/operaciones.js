@@ -38,8 +38,8 @@ console.log("Forma3", +numero5);
 console.log("Forma4", parseFloat(numero5));
 
 console.log("Probando un caso", Number("12hola"));
-console.log(Number("12hola"));
 
+console.log(Number("12hola"));
 // Math
 const operacion = 3 * 2 + 10 - 5 / 2;
 // Math.sqrt = raiz cuadrada
