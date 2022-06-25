@@ -89,7 +89,54 @@ function imprimirFactorial() {
   const inputValor = document.getElementById("input_number").value;
   const resultado = calcularFactorial(inputValor);
 
+  // Esta linea estamos buscando el HTML al elementos que tenga la clase
+  // container cuando lo encuentro lo guarda en la variable container
+  // Luego de esto podemos usar la propiedad innerHTHML para poder
+  // agregar HTML a este cotainer
+
+  //!querySelector Es una funcion de JS la cual permite buscar elementos de una forma sencilla
+  //!Nota el . , # o el nombre del elmento ejem : ul,div,h4 son selectore de elmentos HTML
+  // Cuando es una clase  document.querySelector(".container")
+  // Cuando es un ID document.querySelector("#container")
+  // Cuando es un elemento document.querySelector("div")
   const container = document.querySelector(".container");
   container.innerHTML +=
     "<p>Factortorial de " + inputValor + ": " + resultado + "</p>";
+}
+
+// Reto: Crear una vista la cual tenga un input y boton
+// esta debera mostar en pantalla la tabla de multiplar
+// Ejemplo 5
+// 5 x 1 = 5
+// 5 x 2 = 10
+// 5 x 3 = 15
+// 5 x 4 = 20
+// 5 x 5 = 25
+// 5 x 6 = 30
+// 5 x 7 = 35
+// 5 x 8 = 40
+// 5 x 8 = 45
+// 5 x 10 = 50
+function calcularTabla() {
+  const inputNumber = document.querySelector("#input_number_2");
+  let container = document.querySelector(".resultado");
+
+  container.innerHTML = "";
+
+  const numero = Number(inputNumber.value);
+  // Es es basicamente para limpiar el input
+  inputNumber.value = "";
+
+  if (isNaN(numero)) {
+    alert("Ingrese un numero valido");
+    // Recureden que el return aparte de retonar un valor tambien terminar la ejecucuion
+    // de la funcuion en este nos retornarmos pero si tenemos una alert
+    // y luego un return sin nada para que en este caso solo se encargue de terminar la ejecucion
+    return;
+  }
+
+  for (let i = 1; i <= 12; i++) {
+    container.innerHTML +=
+      "<p>" + numero + " x " + i + " = " + i * numero + "</p>";
+  }
 }

@@ -8,21 +8,36 @@
   </head>
   <style>
     body {
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-family: system-ui, -apple-system;
     }
 
     .container {
       width: 400px;
-      min-height: 400px;
+      min-height: 200px;
       background-color: aquamarine;
+      padding: 10px;
+    }
+
+    .container-2 {
+      width: 400px;
+      min-height: 200px;
+      background-color: rgb(114, 208, 86);
+      padding: 10px;
     }
   </style>
   <body>
     <div class="container">
+      <h4>Factorial</h4>
       <input type="text" placeholder="Ingrese un numero" id="input_number" />
-      <button 
-      onclick="imprimirFactorial()"
-      >Factorial</button>
+      <button onclick="imprimirFactorial()">Factorial</button>
+    </div>
+
+
+    <div class="container-2">
+      <h4>Tabla de multiplicar</h4>
+      <input type="text" placeholder="Ingrese un numero" id="input_number_2" />
+      <button onclick="calcularTabla()">Imprimir tabla</button>
+     <div class="resultado"></div> 
     </div>
   </body>
   <script src="./js/dia5.js"></script>
