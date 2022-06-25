@@ -6,6 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    .container {
+      width: 400px;
+      min-height: 200px;
+      background-color: cadetblue;
+      padding: 10px;
+    }
+
+    button {
+      padding: 5px;
+      background-color: aquamarine;
+      border: none;
+      border-radius: 12px;
+      color: #333;
+    }
+
+    input {
+      padding: 5px;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <input type="text" id="input_name" placeholder="Ingrese un nombre" />
+      <button onclick="imprimirAlumnos()">Agregar Alumno</button>
+      <div>
+        <h4>Lista de alumnos</h4>
+        <div class="resultado"></div>
+      </div>
+    </div>
+    <div class="container">
+      <h4>Promedio de notas</h4>
+      <input type="text" placeholder="Ingrese la nota 1" id="input_nota1" />
+      <input type="text" placeholder="Ingrese la nota 2" id="input_nota2" />
+      <input type="text" placeholder="Ingrese la nota 3" id="input_nota3" />
+      <input type="text" placeholder="Ingrese la nota 4" id="input_nota4" />
+      <button onclick="calcularPromedio()">Calcular Promedio</button>
+      <div class="resultado2"></div>
+    </div>
+  </body>
   <script src="./js/dia5-2.js"></script>
 </html>
