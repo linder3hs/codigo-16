@@ -139,3 +139,26 @@ console.log("Unshift", alumnos);
 //ojo hemos agregado a Daniel
 // shift: Esta funcion elminar al primer elemento de un array
 console.log("Shift", alumnos.shift());
+console.log(alumnos);
+alumnos[2] = "Juanito";
+console.log(alumnos);
+
+// indexOf : Esta funcion retorna la posicion en base a un datos
+const colores = ["Rojo", "Verde", "Amarillo", "Azul", "Verde", "Morado"];
+//Nota si tenemos elementos repetidos va a encontrar al mas cercanos
+// en este casi es el 1
+//! Es caseSensitive
+// Sinsible a mayusculas cuando nos referimos a eso quiere decir que el
+// text que se busca debe ser indetico tanto en mayusculo como en  minusculas
+
+//! Si ustedes ponen un valor que no existe este retorna -1
+//!* Podemos usar esto para ver si un elemento existe en un array
+console.log(colores.indexOf("Verde"));
+
+// const busqueda = prompt("Ingrese el color");
+
+// if (colores.indexOf(busqueda) !== -1) {
+//   alert("El color si existe y es " + colores[colores.indexOf(busqueda)]);
+// } else {
+//   alert("El color no existe");
+// }
