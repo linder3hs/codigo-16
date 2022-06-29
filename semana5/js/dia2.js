@@ -73,7 +73,7 @@ const edades = [23, 21, 34, 45, 28, 30];
 //   return Math.pow(edad, 2);
 // });
 
-const edadadesAlCuadrado = edades.map((edad) => Math.pow(edad, 2));
+const edadadesAlCuadrado = edades.map((edad, index) => Math.pow(edad, 2));
 console.log(edadadesAlCuadrado);
 
 // Reto
@@ -155,9 +155,51 @@ const frase = "HolameLlamocarlos";
 // Basicamente include recibe un paramtro string y lo busca en el texto
 // si lo encuentro retorna true si no lo hace retorana false
 //HolameLlamocarlos => holamellamocarlos
-console.log(frase.toLocaleLowerCase().includes("llamo"));
+console.log(frase.toUpperCase().includes("LLAMO"));
 
 const filtroShirt = clothes.filter((clothe) =>
-  clothe.type.toLocaleLowerCase().includes("shirt")
+  clothe.type.toLowerCase().includes("shirt")
 );
 console.log("filtroShirt", filtroShirt);
+
+// Find
+const numbers = [10, 20, 30, 40, 50, 60, 70];
+const numerosMayores = numbers.filter((number, index) => number > 30);
+console.log(numerosMayores);
+
+// Solo retorna un elemento, es decir no da una busqueda de solamente 1 elemento
+// ojo: Find no retorna un array el solo retorna 1 elemento
+// el elemnto que retorne find sera el primero que encuentre
+// por ende como en la condicion dice > 30
+// va a buscar al numero mayor a este y al primero que encuentro lo va a retornar
+const numeroMayoresFind = numbers.find((number) => number > 30);
+console.log("numeroMayoresFind", numeroMayoresFind);
+
+// Ejmplo2
+const cars = [
+  {
+    model: "GLA 200",
+    price: 34000,
+    brand: "Mercedez",
+  },
+  {
+    model: "A 200",
+    price: 14000,
+    brand: "Mercedez",
+  },
+  {
+    model: "X6",
+    price: 34000,
+    brand: "BMW",
+  },
+];
+// Queremos el primero elemento de lista que sea de la marca mercedez
+const filtroMercedez = cars.find((car) => car.brand === "Mercedez");
+console.log("filtroMercedez", filtroMercedez.model);
+
+// Find tiene un hermanito llamado findIndex
+// El es lo mismo que find sin embar lo que retorna es el indice
+const filtroIndice = cars.findIndex((car) => car.brand === "Mercedez");
+const filtroBMW = cars.findIndex((car) => car.brand === "BMW");
+console.log("filtroIndice 😢", filtroIndice);
+console.log("filtoBMW", filtroBMW);
