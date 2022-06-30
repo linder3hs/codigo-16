@@ -11,6 +11,33 @@ h1 {
   margin: 20px;
 }
 
+.section {
+  text-align: center;
+}
+
+#input-search {
+  padding: 8px;
+  width: 300px;
+}
+
+#btn-search {
+  border: solid rgb(12, 145, 101);
+  padding: 8px;
+  background-color: rgb(12, 145, 101);
+  width: 120px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+#btn-clean {
+  border: solid rgb(254, 76, 76);
+  padding: 8px;
+  background-color: rgb(254, 76, 76);
+  width: 120px;
+  border-radius: 4px;
+  color: #fff;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -20,7 +47,7 @@ h1 {
 .card {
   border-radius: 8px;
   box-shadow: 5px 2px 15px 5px rgba(196, 196, 196, 0.94);
-  width: 25%;
+  max-width: 25%;
   margin: 20px;
 }
 
@@ -37,7 +64,7 @@ h1 {
 img {
   padding: 10px;
   height: 300px;
-  width: 300px;
+  max-width: 300px;
   object-fit: contain;
 }
 
@@ -70,6 +97,6 @@ img {
 
 @media only screen and (max-width: 600px) {
   .card {
-    width: 100%;
+    max-width: 100%;
   }
 }
